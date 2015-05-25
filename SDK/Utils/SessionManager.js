@@ -1,0 +1,16 @@
+// events: Object
+// _facebookToken: null
+// _password: null
+// _sdk: WhipSdk.PartnerSdk
+// _twitterSecret: null
+// _twitterToken: null
+// _userName: null
+// isSignedOut: true
+// networkConnected: true
+// sessionToken: "0e3bb8eb7eec40dbbe9e44cf6892e682"
+// userChannels: Array[35]
+// userId: "3ee4f2b0d39a4272a0d3f21e7e796af4"
+// userImages: Array[1]
+// userRole: "EDITOR"
+// usersSocialDetails: Array[6]
+// __proto__: WhipSdk.ServiceManager
