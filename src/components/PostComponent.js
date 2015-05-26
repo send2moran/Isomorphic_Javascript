@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Correct :)
 var PostComponent = React.createClass({
   render: function() {
     return (

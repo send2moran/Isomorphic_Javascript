@@ -3,14 +3,16 @@ var webpack = require('webpack');
 
 module.exports = {
 
-  entry: {
-        app: './src/main.js'
-  },
+  entry: [
+      'webpack-dev-server/client?http://0.0.0.0:80', // WebpackDevServer host and port
+      'webpack/hot/only-dev-server',
+      './src/main.js'
+  ],
 
   output: {
       path: path.join(__dirname, 'build'),
       filename: 'bundle.js',
-      publicPath: '/scripts/'
+      publicPath: '/dist/'
   },
 
   devtool: 'eval-source-map',

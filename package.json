@@ -4,8 +4,11 @@
   "description": "Description about my awesome project.",
   "main": "./dist/myawesomeproject.js",
   "scripts": {
+    "dev": "node ./webpack/dev-server.js",
     "test": "istanbul test --report html -x 'vendor/**' _mocha -- -R spec",
-    "test-travis": "istanbul cover -x 'vendor/**' _mocha -- -R spec;A=$?;cat coverage/lcov.info | coveralls;exit $A"
+    "test-travis": "istanbul cover -x 'vendor/**' _mocha -- -R spec;A=$?;cat coverage/lcov.info | coveralls;exit $A",
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info",
+    "jest": "jest"
   },
   "repository": {
     "type": "git",
@@ -35,6 +38,7 @@
     "gulp-webpack": "^1.4.0",
     "imports-loader": "^0.6.4",
     "istanbul": "*",
+    "jest-cli": "^0.4.5",
     "jsx-loader": "^0.13.2",
     "mocha": "*",
     "react": "^0.13.3",
