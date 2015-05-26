@@ -3,8 +3,6 @@ import imageProto from '../Prototypes/images.js'
 import {ObjectAssignWithPrototype} from '../Utils'
 import {SessionManager} from '../utils'
 
-//tcomb
-
 var postProto = {
   sayHello: () => console.log('hello')
 };
