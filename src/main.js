@@ -19,7 +19,7 @@ const global = (typeof window !== 'undefined') ? window : {};
 global.WhipSdk = global.WhipSdk || {};
 global.WhipSdk.PartnerSdk = {
   login: function loginFunction(argument) {
-    a.login('moderator@whipclip.com', '_password_').then(function(err, res) {});
+    a.login('moderator@whipclip.com', '').then(function(err, res) {});
   },
 
   test: function() {
